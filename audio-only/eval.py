@@ -27,9 +27,6 @@ for idx in tqdm(range(2351, 2601)):
 
    fg = normalize_rms_np(np.clip(fg, -1.0, 1.0)).reshape(1,-1)
    bg = normalize_rms_np(np.clip(bg, -1.0, 1.0)).reshape(1,-1)
-   np.save('fg.npy', fg)
-   np.save('bg.npy', bg)
-   aaa
    gt = normalize_rms_np(gt).reshape(1,-1)
 
    sdr1,sir1,sar1,_ = bss_eval_sources_framewise(gt, fg)
