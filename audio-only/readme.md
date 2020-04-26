@@ -21,6 +21,6 @@ After downloading the model:
 - Testing on audio-visual model: `python3 vid_sep.py -t -m vidsep -s 1000 -r 1`
 
 ### Demo
-[orig]<a href="./sample/orig.wav">play</a>
+[orig]<a href="./samples/orig.wav">play</a>
 ## Notes
 Currently, we only provide the audio-only model (U-Net) though the code is ready to run both audio-only and audio-visual model.
