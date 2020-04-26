@@ -15,7 +15,6 @@ from tqdm import trange
 from params import *
 from preprocess import *
 from numba import njit, prange
-import SMD_opt
 
 print("PyTorch Version: ",torch.__version__)
 print("Torchaudio Version: ",torchaudio.__version__)
@@ -942,7 +941,6 @@ if __name__ == '__main__':
          print('Training from scratch!')
          net.weight_init(mean=0.0, std=0.02)
          optimizer = optim.Adam(net.parameters(), lr=0.0001, weight_decay=1e-3)
-         #optimizer = SMD_opt.SMD_qnorm(net.parameters(), lr=0.01, q=2)
 
          model, hist_loss = train(net, data_dict['train'], optimizer, use_norm=False,
                                   num_epochs=total_epochs, save_dir=save_dir, PIT=True)
@@ -951,7 +949,6 @@ if __name__ == '__main__':
          checkpoint = torch.load(model_name)
          net.load_state_dict(checkpoint['state_dict'])
          optimizer = optim.Adam(net.parameters(), lr=0.0001, weight_decay=1e-5)
-         #optimizer = SMD_opt.SMD_qnorm(net.parameters(), lr=0.0001, q=2)
          optimizer.load_state_dict(checkpoint['optimizer'])
          min_loss = checkpoint['min_loss']
 
