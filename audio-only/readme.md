@@ -23,9 +23,9 @@ After downloading the model:
 Generated .wav files will be placed in `results` folder. 
 
 ### Sample results
-We put our sample results(.wav) in `samples/audio-only` and `samples/audio-visual` folder of the repo. 
+We put our sample results (.wav) in `samples/audio-only` and `samples/audio-visual` folder of the repo. 
 - Sample video is taken from the real-word video, which is more complicated than that in Obamanet, but both our audio-only and audio-visual models are able to separate the audios.
-- Conents of `fg.wav` and `bg.wav` are sometimes swapped. See below for explanation.
+- Contents of `fg.wav` and `bg.wav` are sometimes swapped. See below for explanation.
 
 ## Notes
 - We put all our implementation work here, though we don't mention the details of audio-visual model because we are unable generate satisfying result because of the out limited GPU computing power and time constraint.
