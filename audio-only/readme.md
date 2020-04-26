@@ -20,7 +20,9 @@ After downloading the model:
 - Testing on audio-only model: `python3 vid_sep.py -t -m unet -s 1000 -r 1`
 - Testing on audio-visual model: `python3 vid_sep.py -t -m vidsep -s 1000 -r 1`
 
-### Demo
-![Sample Audio](samples/orig.wav)
+### Sample results
+We put our sample results(.wav) in `samples/audio-only` and `samples/audio-visual` folder of the repo. Sample video is taken from the real-word video, which is more complicated than that in Obamanet, but both our audio-only and audio-visual models are ablet to separate the audios.
+
 ## Notes
-Currently, we only provide the audio-only model (U-Net) though the code is ready to run both audio-only and audio-visual model.
+- We put all our implementation work here, though we don't mention the details of audio-visual model because we are unable generate satisfying result because of the out limited GPU computing power and time constraint.
+- modify `duration_mult` in `params.py` to a proper value. (Default: 4 for ~8 sec. videos)
