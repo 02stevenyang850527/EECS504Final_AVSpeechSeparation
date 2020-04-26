@@ -16,9 +16,11 @@ A linux machine with Nvidia GPU and CUDA, python3 ebvironment with following pac
 We provide a script `download_data_model.sh` to get our training model and sample data.
 
 #### Usage
-After download the model: 
+After downloading the model: 
 - Testing on audio-only model: `python3 vid_sep.py -t -m unet -s 1000 -r 1`
 - Testing on audio-visual model: `python3 vid_sep.py -t -m vidsep -s 1000 -r 1`
 
+### Demo
+[orig](/samples/orig.wav)
 ## Notes
 Currently, we only provide the audio-only model (U-Net) though the code is ready to run both audio-only and audio-visual model.
