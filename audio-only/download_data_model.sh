@@ -7,6 +7,7 @@ mkdir model
 mkdir ../data
 mkdir results
 mv unet_data/UNetModel_set1000_1.pth ./model/
+mv unet_data/VidSepModel_set1000_1.pth ./model/
 mv unet_data/translator.mp4 ../data/
 rm -rf unet_data
 rm ao_only.zip
