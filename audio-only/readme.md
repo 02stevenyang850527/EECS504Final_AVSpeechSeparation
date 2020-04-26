@@ -17,7 +17,16 @@ We provide a script `download_data_model.sh` to get our training model and sampl
 
 ## Usage
 After download the model: 
-- Testing: python3 vid_sep.py -t -m unet -s 1000 -r 1
+- Testing on audio-only model: `python3 vid_sep.py -t -m unet -s 1000 -r 1`
+- Testing on audio-visual model: `python3 vid_sep.py -t -m vidsep -s 1000 -r 1`
+
+## DEMO
+We provide several .wav files to show our reproduction.
+orig.wav: 
+<audio controls>
+  <source src="https://github.com/02stevenyang850527/EECS504Final_AVSpeechSeparation/blob/master/audio-only/samples/orig.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
 
 ## Notes
 Currently, we only provide the audio-only model (U-Net) though the code is ready to run both audio-only and audio-visual model.
