@@ -1,17 +1,6 @@
 # Visual Speech Enhancement
 
-### Dependencies
-* python >= 2.7
-* [mediaio](https://github.com/avivga/mediaio)
-* [face-detection](https://github.com/avivga/face-detection)
-* keras >= 2.0.4
-* numpy >= 1.12.1
-* dlib >= 19.4.0
-* opencv >= 3.2.0
-* librosa >= 0.5.1
-Need to install mediaio and face-detection by git clone the repo
-and run python setup.py install
- 
+
 ### Getting started
 Given an audio-visual dataset of the directory structure:
 ```
@@ -59,6 +48,19 @@ speech_enhancer.py --base_dir <output-dir-path> predict
     --data_name <preprocessed-test-data-name>
     [--gpus <num-of-gpus>]
 ```
+
+### Dependencies
+* python >= 2.7
+* [mediaio](https://github.com/avivga/mediaio)
+* [face-detection](https://github.com/avivga/face-detection)
+* keras >= 2.0.4
+* numpy >= 1.12.1
+* dlib >= 19.4.0
+* opencv >= 3.2.0
+* librosa >= 0.5.1
+
+Need to install mediaio and face-detection by git clone the repo
+and run python setup.py install
 
 ## Reference
 ```
